@@ -30,6 +30,7 @@ function train_qa {
   params+=(--max_seq_length "${MAX_SEQ_LENGTH}")
   params+=(--doc_stride 128)
   params+=(--output_dir "${OUTPUT_DIR}")
+  params+=(--resume_from_checkpoint "${OUTPUT_DIR}")
   params+=(--overwrite_output_dir)
   params+=(--overwrite_cache)
   params+=(--seed "${SEED}")
