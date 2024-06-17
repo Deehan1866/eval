@@ -1,0 +1,33 @@
+# QA Huggingface
+transformers
+datasets
+tqdm
+wandb
+
+# Phrase Similarity
+pytorch-lightning==1.6.5
+sklearn
+simcse
+sentence-transformers
+
+# Phrase Retrieval
+tensorflow
+tensorflow-hub
+
+# DensePhrase
+faiss-gpu
+transformers
+spacy
+h5py
+blosc
+ujson
+rouge
+wandb
+nltk
+flask
+flask_cors
+tornado
+requests-futures
+
+# Demo
+waitress
