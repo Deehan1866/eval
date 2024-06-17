@@ -34,6 +34,8 @@ function train_qa {
   params+=(--overwrite_cache)
   params+=(--seed "${SEED}")
 
+  params+=(--push_to_hub)
+
   params+=(--evaluation_strategy "steps")
   params+=(--metric_for_best_model "eval_exact_match")
   params+=(--load_best_model_at_end True)
@@ -89,6 +91,10 @@ function finetune_model {
     train_qa allenai/longformer-base-4096 "${DATASET}" "${DATASET_CONFIG}" "${OUTPUT_DIR}" 2 2 "${RANDOM_SEED}" 4096 0
   elif [[ ${MODEL} == "Longformer-large" ]]; then
     train_qa allenai/longformer-large-4096 "${DATASET}" "${DATASET_CONFIG}" "${OUTPUT_DIR}" 1 1 "${RANDOM_SEED}" 4096 0
+  elif [[ ${MODEL} == "AlBert" ]]; then
+    train_qa albert/albert-base-v2 "${DATASET}" "${DATASET_CONFIG}" "${OUTPUT_DIR}" 8 8 "${RANDOM_SEED}" 512 0
+  elif [[ ${MODEL} == "XlNet" ]]; then
+    train_qa xlnet/xlnet-base-cased "${DATASET}" "${DATASET_CONFIG}" "${OUTPUT_DIR}" 8 8 "${RANDOM_SEED}" 512 0
   fi
 }
 
