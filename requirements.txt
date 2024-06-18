@@ -1,13 +1,14 @@
 # QA Huggingface
 transformers
+#transformers>=4.34
 datasets
 tqdm
 wandb
 
 # Phrase Similarity
 pytorch-lightning==1.6.5
-sklearn
-simcse
+scikit-learn
+#simcse
 sentence-transformers
 
 # Phrase Retrieval
