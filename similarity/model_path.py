@@ -1,12 +1,12 @@
-
 MODEL_PATH = {
-    "PhraseBERT": "whaleloops/phrase-bert",
+    #"PhraseBERT": "whaleloops/phrase-bert",
     # "DensePhrases": "princeton-nlp/densephrases-multi-query-multi",
-    "BERT": "bert-base-uncased",
-    "SpanBERT-base": "SpanBERT/spanbert-base-cased",
-    "SpanBERT-large": "SpanBERT/spanbert-large-cased",
-    "SentenceBERT": "bert-base-nli-stsb-mean-tokens",
-    "SimCSE": "princeton-nlp/sup-simcse-bert-base-uncased",
+    #"BERT": "bert-base-uncased",
+    #"SpanBERT-base": "SpanBERT/spanbert-base-cased",
+    #"SpanBERT-large": "SpanBERT/spanbert-large-cased",
+    #"SentenceBERT": "bert-base-nli-stsb-mean-tokens",
+    #"SimCSE": "princeton-nlp/sup-simcse-bert-base-uncased",
+    #"E5": "intfloat/e5-base-v2"
+    "EMistral": "intfloat/e5-mistral-7b-instruct"
 }
-
 
