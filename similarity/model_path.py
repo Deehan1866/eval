@@ -7,6 +7,6 @@ MODEL_PATH = {
     #"SentenceBERT": "bert-base-nli-stsb-mean-tokens",
     #"SimCSE": "princeton-nlp/sup-simcse-bert-base-uncased",
     #"E5": "intfloat/e5-base-v2"
-    "EMistral": "intfloat/e5-mistral-7b-instruct"
+    #"EMistral": "intfloat/e5-mistral-7b-instruct"  #not working
 }
 
