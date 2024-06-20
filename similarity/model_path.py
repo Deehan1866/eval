@@ -2,9 +2,8 @@ MODEL_PATH = {
 
     #"ElectraLarge": "google/electra-large-discriminator", #first app: 64.70, second app: 76.55
     #"Electra": "google/electra-base-discriminator", #first app: 61, second app: 75.25  
-    "ElectraSmall":"google/electra-small-discriminator",
-    "FlanT5": "google/flan-t5-base",
     #"StructBert": "bayartsogt/structbert-large", #first app: 59, second app: 70.50
+    #"ElectraSmall":"google/electra-small-discriminator", #first app: 58.25, second app: 70.20
     #"Distilbert": "distilbert/distilbert-base-uncased",  #GOOD, 64.50, second app: 69.55
     #"SpanBERT-large": "SpanBERT/spanbert-large-cased",
     #"multiqaMPnet": "sentence-transformers/multi-qa-mpnet-base-dot-v1", #63.75, second app: 67.25
@@ -24,7 +23,7 @@ MODEL_PATH = {
 
 
     #RESULT TOO LOW
-    "Deberta": "microsoft/deberta-base"
+    
     #"DistilbertFinetuned": "distilbert/distilbert-base-uncased-finetuned-sst-2-english", #62, second app: 63.90
     #"E5": "intfloat/e5-base-v2", #first app: 61.05, second app: 61.55
     #"E5Large": "intfloat/e5-large-v2", #firs app: 62, second app: 62.40
@@ -45,12 +44,12 @@ MODEL_PATH = {
 
 
     #TOO LARGE
-    #"T511B": "google-t5/t5-11b" #too large
-    #"LLM": "meta-llama/Meta-Llama-3-8B" #too big
-    #"EmbedMistral": "Linq-AI-Research/Linq-Embed-Mistral" #run hoy nay, ram issue
-    #"EMistral": "intfloat/e5-mistral-7b-instruct"  #not working
-    #"Mistral": "mistralai/Mistral-7B-v0.1" #same issue as the previous one
-    #"Xlnet": "xlnet/xlnet-base-cased" #OverflowError: can't convert negative int to unsigned
+    #"T511B": "google-t5/t5-11b", #too large
+    #"LLM": "meta-llama/Meta-Llama-3-8B", #too big
+    #"EmbedMistral": "Linq-AI-Research/Linq-Embed-Mistral", #run hoy nay, ram issue
+    #"EMistral": "intfloat/e5-mistral-7b-instruct",  #not working
+    #"Mistral": "mistralai/Mistral-7B-v0.1", #same issue as the previous one
+    #"Xlnet": "xlnet/xlnet-base-cased", #OverflowError: can't convert negative int to unsigned
     
     
     #Too MANY PHRASES NOT FOUND
@@ -66,11 +65,13 @@ MODEL_PATH = {
     #"BigBirdLarge": "google/bigbird-roberta-large" #59 too too too many phrases
     #"Longformer": "allenai/longformer-base-4096" #too too too too too too too too
     #"T5": "google-t5/t5-large" #tooo many, error dise last e (not many values to unpack)
+    #"FlanT5": "google/flan-t5-base",
     #"Luke": "studio-ousia/luke-base" #too many, 55
     #"SentenceT5": "sentence-transformers/sentence-t5-base", #61.06, phrases not found, second app: 57.91
     #"SentenceSimilarity": "annakotarba/sentence-similarity" #too many, 55 accuracy
     #"SentenceROberta": "sentence-transformers/roberta-base-nli-stsb-mean-tokens", #68.60, so many phrases, second app: 20.93
     #"DPR": "facebook/dpr-question_encoder-single-nq-base" #Dimension issues
+    #"Deberta": "microsoft/deberta-base",
     
     
 }
