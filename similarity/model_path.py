@@ -45,8 +45,8 @@ MODEL_PATH = {
 
     #TOO LARGE
     #"T511B": "google-t5/t5-11b", #too large
-    #"LLM": "meta-llama/Meta-Llama-3-8B", #too big
-    #"EmbedMistral": "Linq-AI-Research/Linq-Embed-Mistral", #run hoy nay, ram issue
+    "LLM": "meta-llama/Meta-Llama-3-8B", #too big
+    #"EmbedMistral": "Linq-AI-Research/Linq-Embed-Mistral", #torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 224.00 MiB. GPU 
     #"EMistral": "intfloat/e5-mistral-7b-instruct",  #not working
     #"Mistral": "mistralai/Mistral-7B-v0.1", #same issue as the previous one
     #"Xlnet": "xlnet/xlnet-base-cased", #OverflowError: can't convert negative int to unsigned
