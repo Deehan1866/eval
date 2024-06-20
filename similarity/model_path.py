@@ -1,7 +1,7 @@
 MODEL_PATH = {
 
+    #"ElectraLarge": "google/electra-large-discriminator", #first app: 64.70, second app: 76.55
     #"Electra": "google/electra-base-discriminator", #first app: 61, second app: 75.25  
-    "ElectraLarge": "google/electra-large-discriminator", #first app: 64.70, second app: 
     #"StructBert": "bayartsogt/structbert-large", #first app: 59, second app: 70.50
     #"Distilbert": "distilbert/distilbert-base-uncased",  #GOOD, 64.50, second app: 69.55
     #"SpanBERT-large": "SpanBERT/spanbert-large-cased",
@@ -28,10 +28,10 @@ MODEL_PATH = {
     #"DistilbertQA": "distilbert/distilbert-base-cased-distilled-squad", #second app: 61.80
     #"sentenceDISTILBERT": "sentence-transformers/distilbert-multilingual-nli-stsb-quora-ranking",#second app: 57.15
     #"Canine": "google/canine-c", #50 accuracy, second app: 46.30
-    "sbert": "l3cube-pune/indic-sentence-similarity-sbert", #58.50 accuracy
+    #"sbert": "l3cube-pune/indic-sentence-similarity-sbert", #58.50 accuracy, second app: 55.55
     #"miniLM": "sentence-transformers/all-MiniLM-L6-v2", #58 accuracy, second app: 54.50
     #"MiniLM": "sentence-transformers/all-MiniLM-L12-v2", #58, second app: 56.45
-    "Minilm": "sentence-transformers/paraphrase-MiniLM-L6-v2", #54.75
+    #"Minilm": "sentence-transformers/paraphrase-MiniLM-L6-v2", #54.75, second app: 55.85
     #"MINILM": "sentence-transformers/multi-qa-MiniLM-L6-cos-v1", #56.75, second app: 58.75
     #"Mpnet": "sentence-transformers/all-mpnet-base-v2", #64, second app: 62.45
     #"MpnetV1": "sentence-transformers/all-mpnet-base-v1", #65.10, second app: 63.75
@@ -56,7 +56,7 @@ MODEL_PATH = {
     #"alBERT": "sentence-transformers/paraphrase-albert-small-v2", #too many phrases, 55.73 
     #"DistilbertGPT": "google-t5/t5-large" #error not enough values to unpack
     #"Roberta": "FacebookAI/roberta-base" #too many phrase not found
-    "DistilRoberta": "distilbert/distilroberta-base", #first app: 50.00, too many phrases not found
+    #"DistilRoberta": "distilbert/distilroberta-base", #first app: 50.00, too many phrases not found, second app:51.16
     #"XLMRoberta": "FacebookAI/xlm-roberta-base" #too many phrase not found bt still gives 58
     #"RobertaEnglish": "FacebookAI/xlm-roberta-large-finetuned-conll03-english" #too many phrase not found
     #"BigBird": "google/bigbird-roberta-base" #61 accuracy too many phrases not found
