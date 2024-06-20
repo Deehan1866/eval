@@ -1,7 +1,7 @@
 MODEL_PATH = {
 
     #"Electra": "google/electra-base-discriminator", #first app: 61, second app: 75.25  
-    "ElectraLarge": "google/electra-large-discriminator", #first app: , second app: 
+    "ElectraLarge": "google/electra-large-discriminator", #first app: 64.70, second app: 
     #"StructBert": "bayartsogt/structbert-large", #first app: 59, second app: 70.50
     #"Distilbert": "distilbert/distilbert-base-uncased",  #GOOD, 64.50, second app: 69.55
     #"SpanBERT-large": "SpanBERT/spanbert-large-cased",
@@ -28,7 +28,7 @@ MODEL_PATH = {
     #"DistilbertQA": "distilbert/distilbert-base-cased-distilled-squad", #second app: 61.80
     #"sentenceDISTILBERT": "sentence-transformers/distilbert-multilingual-nli-stsb-quora-ranking",#second app: 57.15
     #"Canine": "google/canine-c", #50 accuracy, second app: 46.30
-    "sbert": "l3cube-pune/indic-sentence-similarity-sbert", #58 accuracy
+    "sbert": "l3cube-pune/indic-sentence-similarity-sbert", #58.50 accuracy
     #"miniLM": "sentence-transformers/all-MiniLM-L6-v2", #58 accuracy, second app: 54.50
     #"MiniLM": "sentence-transformers/all-MiniLM-L12-v2", #58, second app: 56.45
     "Minilm": "sentence-transformers/paraphrase-MiniLM-L6-v2", #54.75
