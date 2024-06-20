@@ -23,7 +23,6 @@ MODEL_PATH = {
 
     #RESULT TOO LOW
     #"DistilbertFinetuned": "distilbert/distilbert-base-uncased-finetuned-sst-2-english", #62, second app: 63.90
-    "DistilRoberta": "distilbert/distilroberta-base", #first app: 50.00,
     #"E5": "intfloat/e5-base-v2", #first app: 61.05, second app: 61.55
     #"E5Large": "intfloat/e5-large-v2", #firs app: 62, second app: 62.40
     #"DistilbertQA": "distilbert/distilbert-base-cased-distilled-squad", #second app: 61.80
@@ -57,6 +56,7 @@ MODEL_PATH = {
     #"alBERT": "sentence-transformers/paraphrase-albert-small-v2", #too many phrases, 55.73 
     #"DistilbertGPT": "google-t5/t5-large" #error not enough values to unpack
     #"Roberta": "FacebookAI/roberta-base" #too many phrase not found
+    "DistilRoberta": "distilbert/distilroberta-base", #first app: 50.00, too many phrases not found
     #"XLMRoberta": "FacebookAI/xlm-roberta-base" #too many phrase not found bt still gives 58
     #"RobertaEnglish": "FacebookAI/xlm-roberta-large-finetuned-conll03-english" #too many phrase not found
     #"BigBird": "google/bigbird-roberta-base" #61 accuracy too many phrases not found
