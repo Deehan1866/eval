@@ -2,6 +2,8 @@ MODEL_PATH = {
 
     #"ElectraLarge": "google/electra-large-discriminator", #first app: 64.70, second app: 76.55
     #"Electra": "google/electra-base-discriminator", #first app: 61, second app: 75.25  
+    "ElectraSmall":"google/electra-small-discriminator",
+    "FlanT5": "google/flan-t5-base",
     #"StructBert": "bayartsogt/structbert-large", #first app: 59, second app: 70.50
     #"Distilbert": "distilbert/distilbert-base-uncased",  #GOOD, 64.50, second app: 69.55
     #"SpanBERT-large": "SpanBERT/spanbert-large-cased",
