@@ -56,7 +56,7 @@ MODEL_PATH = {
 
     #"Minilm": "sentence-transformers/paraphrase-MiniLM-L6-v2" #54.75
     "MINILM": "sentence-transformers/multi-qa-MiniLM-L6-cos-v1", #56.75
-    "Mpnet": "sentence-transformers/all-mpnet-base-v2" #64
+    "Mpnet": "sentence-transformers/all-mpnet-base-v2", #64
     #"MpnetV1": "sentence-transformers/all-mpnet-base-v1", #65.10, second app: 63.75
 
     "multiqaMPnet": "sentence-transformers/multi-qa-mpnet-base-dot-v1", #63.75
