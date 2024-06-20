@@ -36,5 +36,7 @@ MODEL_PATH = {
     #"miniLM": "sentence-transformers/all-MiniLM-L6-v2" #58 accuracy
     #"Mpnet": "sentence-transformers/all-mpnet-base-v2" #64
     #"MpnetV1": "sentence-transformers/all-mpnet-base-v1" #65
-    "EmbedMistral": "Linq-AI-Research/Linq-Embed-Mistral"
+    #"EmbedMistral": "Linq-AI-Research/Linq-Embed-Mistral" #run hoy nay
+    "Labse": "sentence-transformers/LaBSE"
+
 }
