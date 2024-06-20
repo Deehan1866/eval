@@ -24,6 +24,7 @@ MODEL_PATH = {
 
 
     #RESULT TOO LOW
+    "Deberta": "microsoft/deberta-base"
     #"DistilbertFinetuned": "distilbert/distilbert-base-uncased-finetuned-sst-2-english", #62, second app: 63.90
     #"E5": "intfloat/e5-base-v2", #first app: 61.05, second app: 61.55
     #"E5Large": "intfloat/e5-large-v2", #firs app: 62, second app: 62.40
