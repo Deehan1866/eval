@@ -16,7 +16,7 @@ MODEL_PATH = {
     #"SimCSE": "princeton-nlp/sup-simcse-bert-base-uncased",
 
     
-    "E5": "intfloat/e5-base-v2", #first app: 61.05, second app:
+    "E5": "intfloat/e5-base-v2", #first app: 61.05, second app: 61.55
     #"E5Large": "intfloat/e5-large-v2", #firs app: 62, second app: 62.40
 
     #"E5LargeMultilingual": "intfloat/multilingual-e5-large-instruct" #tooo many, still 61
@@ -28,11 +28,11 @@ MODEL_PATH = {
     #"T511B": "google-t5/t5-11b" #too large
     
 
-    "DistilbertFinetuned": "distilbert/distilbert-base-uncased-finetuned-sst-2-english", #62 accuracy
+    "DistilbertFinetuned": "distilbert/distilbert-base-uncased-finetuned-sst-2-english", #62, second app: 63.90
     #"DistilRoberta": "distilbert/distilroberta-base"
-    "DistilbertQA": "distilbert/distilbert-base-cased-distilled-squad",
+    "DistilbertQA": "distilbert/distilbert-base-cased-distilled-squad", #second app:61.80
     #"DistilbertGPT": "google-t5/t5-large" #error not enough values to unpack
-    "sentenceDISTILBERT": "sentence-transformers/distilbert-multilingual-nli-stsb-quora-ranking",
+    "sentenceDISTILBERT": "sentence-transformers/distilbert-multilingual-nli-stsb-quora-ranking",#second app: 57.15
     #"LLM": "meta-llama/Meta-Llama-3-8B" #too big
     #"Roberta": "FacebookAI/roberta-base" #too many phrase not found
     #"XLMRoberta": "FacebookAI/xlm-roberta-base" #too many phrase not found bt still gives 58
@@ -40,35 +40,35 @@ MODEL_PATH = {
     
    
 
-    "Canine": "google/canine-c", #50 accuracy
+    "Canine": "google/canine-c", #50 accuracy, second app: 46.30
     #"BigBird": "google/bigbird-roberta-base" #61 accuracy too many phrases not found
     #"BigBirdLarge": "google/bigbird-roberta-large" #59 too too too many phrases
     #"Longformer": "allenai/longformer-base-4096" #too too too too too too too too
     
 
     #"T5": "google-t5/t5-large" #tooo many, error dise last e (not many values to unpack)
-    "SentenceT5": "sentence-transformers/sentence-t5-base", #61.06, phrases not found
+    "SentenceT5": "sentence-transformers/sentence-t5-base", #61.06, phrases not found, second app: 57.91
     #"SentenceSimilarity": "annakotarba/sentence-similarity" #too many, 55 accuracy
     #"Luke": "studio-ousia/luke-base" #too many, 55
     #"sbert": "l3cube-pune/indic-sentence-similarity-sbert" #58 accuracy
-    "miniLM": "sentence-transformers/all-MiniLM-L6-v2", #58 accuracy
-    "MiniLM": "sentence-transformers/all-MiniLM-L12-v2", #58
+    "miniLM": "sentence-transformers/all-MiniLM-L6-v2", #58 accuracy, second app: 54.50
+    "MiniLM": "sentence-transformers/all-MiniLM-L12-v2", #58, second app: 56.45
 
     #"Minilm": "sentence-transformers/paraphrase-MiniLM-L6-v2" #54.75
-    "MINILM": "sentence-transformers/multi-qa-MiniLM-L6-cos-v1", #56.75
-    "Mpnet": "sentence-transformers/all-mpnet-base-v2", #64
+    "MINILM": "sentence-transformers/multi-qa-MiniLM-L6-cos-v1", #56.75, second app: 58.75
+    "Mpnet": "sentence-transformers/all-mpnet-base-v2", #64, second app: 62.45
     #"MpnetV1": "sentence-transformers/all-mpnet-base-v1", #65.10, second app: 63.75
 
-    "multiqaMPnet": "sentence-transformers/multi-qa-mpnet-base-dot-v1", #63.75
+    "multiqaMPnet": "sentence-transformers/multi-qa-mpnet-base-dot-v1", #63.75, second app: 67.25
     
 
-    "mpNET": "sentence-transformers/nli-mpnet-base-v2", #63.36
-    "MpNET": "sentence-transformers/stsb-mpnet-base-v2", #62.95
+    "mpNET": "sentence-transformers/nli-mpnet-base-v2", #63.36, second app: 66.50
+    "MpNET": "sentence-transformers/stsb-mpnet-base-v2", #62.95, second app: 64.85
     #"EmbedMistral": "Linq-AI-Research/Linq-Embed-Mistral" #run hoy nay, ram issue
-    "Labse": "sentence-transformers/LaBSE", #55
-    "DPRport": "sentence-transformers/facebook-dpr-ctx_encoder-multiset-base", #62.4
+    "Labse": "sentence-transformers/LaBSE", #55, second app: 54.05
+    "DPRport": "sentence-transformers/facebook-dpr-ctx_encoder-multiset-base", #62.4, second app: 66.50
     #"SentenceDistillbert": "sentence-transformers/msmarco-distilbert-dot-v5" #56.56
     #"SentenceBert": "sentence-transformers/msmarco-bert-base-dot-v5" #56.40
-    "SentenceROberta": "sentence-transformers/roberta-base-nli-stsb-mean-tokens", #68.60, so many phrases
+    "SentenceROberta": "sentence-transformers/roberta-base-nli-stsb-mean-tokens", #68.60, so many phrases, second app: 20.93
     #"DPR": "facebook/dpr-question_encoder-single-nq-base" #Dimension issues
 }
