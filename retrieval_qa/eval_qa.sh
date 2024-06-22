@@ -18,7 +18,7 @@ function eval_qa {
 
   params=()
 
-  params+=(--model_name_or_path "${MODEL}")
+  params+=(--model_name_or_path Deehan1866/Phrase-retrieval-PR-pass-deberta)
   params+=(--do_predict)
   params+=(--dataset_name PiC/"${DATASET}")
   params+=(--dataset_config_name "${DATASET_CONFIG}")
@@ -83,6 +83,8 @@ function evaluate_model {
     eval_qa allenai/longformer-large-4096 "${DATASET}" "${DATASET_CONFIG}" "${OUTPUT_DIR}" 1 "${RANDOM_SEED}" 4096 0
   elif [[ ${MODEL} == "PRpassXLNET" ]]; then
     eval_qa Deehan1866/Phrase-retrieval-PR-pass-xlnet "${DATASET}" "${DATASET_CONFIG}" "${OUTPUT_DIR}" 8 "${RANDOM_SEED}" 512 0
+  elif [[ ${MODEL} == "PRpassDEBERTA" ]]; then
+    eval_qa Deehan1866/Phrase-retrieval-PR-pass-deberta "${DATASET}" "${DATASET_CONFIG}" "${OUTPUT_DIR}" 8 "${RANDOM_SEED}" 512 0
   fi
 }
 
