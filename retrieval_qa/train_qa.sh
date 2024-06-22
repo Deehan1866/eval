@@ -98,6 +98,8 @@ function finetune_model {
     train_qa xlnet/xlnet-base-cased "${DATASET}" "${DATASET_CONFIG}" "${OUTPUT_DIR}" 8 8 "${RANDOM_SEED}" 512 0
   elif [[ ${MODEL} == "ModifiedXlNet" ]]; then
     train_qa Deehan1866/modified_phrase_similarity_XlNet "${DATASET}" "${DATASET_CONFIG}" "${OUTPUT_DIR}" 8 8 "${RANDOM_SEED}" 512 0
+    elif [[ ${MODEL} == "Deberta" ]]; then
+    train_qa microsoft/deberta-base "${DATASET}" "${DATASET_CONFIG}" "${OUTPUT_DIR}" 8 8 "${RANDOM_SEED}" 512 0
   fi
 }
 
