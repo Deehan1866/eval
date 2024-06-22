@@ -10,7 +10,7 @@ function eval_qa {
   local MAX_SEQ_LENGTH=$7
   local GPU=$8
 
-  local MODEL=${OUTPUT_DIR}/${DATASET}/${DATASET_CONFIG}/qa/${MODEL_BASE}/finetuned
+  #local MODEL=${OUTPUT_DIR}/${DATASET}/${DATASET_CONFIG}/qa/${MODEL_BASE}/finetuned
   local OUTPUT_DIR=${OUTPUT_DIR}/${DATASET}/${DATASET_CONFIG}/qa/${MODEL_BASE}/evaluation
 
   mkdir -p $OUTPUT_DIR
@@ -81,6 +81,8 @@ function evaluate_model {
     eval_qa allenai/longformer-base-4096 "${DATASET}" "${DATASET_CONFIG}" "${OUTPUT_DIR}" 2 "${RANDOM_SEED}" 4096 0
   elif [[ ${MODEL} == "Longformer-large" ]]; then
     eval_qa allenai/longformer-large-4096 "${DATASET}" "${DATASET_CONFIG}" "${OUTPUT_DIR}" 1 "${RANDOM_SEED}" 4096 0
+  elif [[ ${MODEL} == "PRpassXLNET" ]]; then
+    eval_qa Deehan1866/Phrase-retrieval-PR-pass-xlnet "${DATASET}" "${DATASET_CONFIG}" "${OUTPUT_DIR}" 8 "${RANDOM_SEED}" 512 0
   fi
 }
 
