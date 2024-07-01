@@ -1,6 +1,6 @@
 MODEL_PATH = {
 
-    #"ElectraLarge": "google/electra-large-discriminator", #first app: 64.70, second app: 76.55
+    "ElectraLarge": "google/electra-large-discriminator", #first app: 64.70, second app: 76.55
     #"Electra": "google/electra-base-discriminator", #first app: 61, second app: 75.25  
     #"StructBert": "bayartsogt/structbert-large", #first app: 59, second app: 70.50
     #"ElectraSmall":"google/electra-small-discriminator", #first app: 58.25, second app: 70.20
@@ -45,7 +45,7 @@ MODEL_PATH = {
 
     #TOO LARGE
     #"T511B": "google-t5/t5-11b", #too large
-    "LLM": "meta-llama/Meta-Llama-3-8B", #too big
+    #"LLM": "meta-llama/Meta-Llama-3-8B", #too big
     #"EmbedMistral": "Linq-AI-Research/Linq-Embed-Mistral", #torch.cuda.OutOfMemoryError: CUDA out of memory. Tried to allocate 224.00 MiB. GPU 
     #"EMistral": "intfloat/e5-mistral-7b-instruct",  #not working
     #"Mistral": "mistralai/Mistral-7B-v0.1", #same issue as the previous one
