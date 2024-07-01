@@ -1,5 +1,6 @@
 import numpy as np
 import torch
+import torch.nn as nn
 import torch.nn.functional as F
 from datasets import load_dataset
 from densephrases import DensePhrases
@@ -226,9 +227,14 @@ class ProbingModel(LightningModule):
         self.test_y = []
         self.test_y_hat = []
 
+        # Dropout layer
+        self.dropout = nn.Dropout(p=0.2)  # Adjust dropout rate as needed
+
+
     def forward(self, x):
         x1 = self.linear(x)
         x1a = F.relu(x1)
+        x1a = self.dropout(x1a)
         x2 = self.linear2(x1a)
         output = self.output(x2)
         return reshape(output, (-1,))
