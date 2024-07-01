@@ -1,6 +1,6 @@
 MODEL_PATH = {
 
-    "ElectraLarge": "google/electra-large-discriminator", #first app: 64.70, second app: 76.55
+    #"ElectraLarge": "google/electra-large-discriminator", #first app: 64.70, second app: 76.55
     #"Electra": "google/electra-base-discriminator", #first app: 61, second app: 75.25  
     #"StructBert": "bayartsogt/structbert-large", #first app: 59, second app: 70.50
     #"ElectraSmall":"google/electra-small-discriminator", #first app: 58.25, second app: 70.20
@@ -71,7 +71,7 @@ MODEL_PATH = {
     #"SentenceSimilarity": "annakotarba/sentence-similarity" #too many, 55 accuracy
     #"SentenceROberta": "sentence-transformers/roberta-base-nli-stsb-mean-tokens", #68.60, so many phrases, second app: 20.93
     #"DPR": "facebook/dpr-question_encoder-single-nq-base" #Dimension issues
-    #"Deberta": "microsoft/deberta-base",
+    #"Deberta": "microsoft/deberta-v3-base",
     
     
 }
