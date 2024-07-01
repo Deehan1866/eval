@@ -228,7 +228,7 @@ class ProbingModel(LightningModule):
         self.test_y_hat = []
 
         # Dropout layer
-        self.dropout = nn.Dropout(p=0.2)  # Adjust dropout rate as needed
+        self.dropout = nn.Dropout(p=0.19)  # Adjust dropout rate as needed
 
 
     def forward(self, x):
