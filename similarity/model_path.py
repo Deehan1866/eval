@@ -1,6 +1,6 @@
 MODEL_PATH = {
 
-    #"ElectraLarge": "google/electra-large-discriminator", #first app: 64.70, second app: 76.55
+    "ElectraLarge": "Deehan1866/Finetuned-electra-large", #first app: 64.70, second app: 76.55
     #"Electra": "google/electra-base-discriminator", #first app: 61, second app: 75.25  
     #"StructBert": "bayartsogt/structbert-large", #first app: 59, second app: 70.50
     #"ElectraSmall":"google/electra-small-discriminator", #first app: 58.25, second app: 70.20
