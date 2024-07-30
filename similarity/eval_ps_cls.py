@@ -17,7 +17,7 @@ from pytorch_lightning import seed_everything, Trainer
 from pytorch_lightning.callbacks import EarlyStopping
 import json
 from model_path import MODEL_PATH
-from cls_utils import ParaphraseDataset, ProbingModel, get_data_emb
+from cls_lstm_utils import ParaphraseDataset, ProbingModel, get_data_emb
 import argparse
 from os.path import exists
 from os import makedirs
