@@ -18,7 +18,7 @@ def get_data_emb(full_run_mode, task, split, model_path, device, shuffle=True, c
 
     if task == "phrase_similarity":
         # Train + Evaluate on PS-hard
-        dataset_path = "Deehan1866/processed_phrase_similarity"
+        dataset_path = "PiC/phrase_similarity"
         data_list = load_dataset(dataset_path)[split]   # download_mode="force_redownload"
     else:
         print("Task {} is currently not supported.".format(task))
